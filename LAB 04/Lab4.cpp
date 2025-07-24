@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <iostream>
-
 int main() {
     char EmployeesID[10];
     int Hour = 0;

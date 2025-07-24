@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <iostream>
+#include <conio.h>
 
 int main() {
     int score = 0;

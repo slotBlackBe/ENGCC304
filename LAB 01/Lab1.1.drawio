@@ -1,0 +1,50 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Flowchart" id="flowchart1">
+    <mxGraphModel dx="1420" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Start -->
+        <mxCell id="start" value="Start" style="ellipse;shape=ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="40" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Process: ประกาศตัวแปร -->
+        <mxCell id="declare" value="ประกาศตัวแปร a, b, c" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="140" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Input -->
+        <mxCell id="input" value="รับค่า a, b, c" style="shape=parallelogram;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="240" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Output -->
+        <mxCell id="output" value="แสดงผลรวม a+b+c" style="shape=parallelogram;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="340" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Stop -->
+        <mxCell id="stop" value="Stop" style="ellipse;shape=ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="460" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Edges -->
+        <mxCell id="edge1" edge="1" parent="1" source="start" target="declare">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" edge="1" parent="1" source="declare" target="input">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" edge="1" parent="1" source="input" target="output">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4" edge="1" parent="1" source="output" target="stop">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

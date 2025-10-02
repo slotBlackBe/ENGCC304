@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Employee Income Flowchart" id="employeeIncomeFlow">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Start -->
+        <mxCell id="start" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="20" width="120" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Input Employee ID -->
+        <mxCell id="input_id" value="รับค่า Employee ID" style="shape=parallelogram;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="120" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Input Hours Worked -->
+        <mxCell id="input_hours" value="รับค่าจำนวนชั่วโมงทำงาน" style="shape=parallelogram;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="220" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Input Hourly Rate -->
+        <mxCell id="input_rate" value="รับค่าอัตราค่าจ้างต่อชั่วโมง" style="shape=parallelogram;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="320" width="200" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Process: Calculate Total Income -->
+        <mxCell id="calc_income" value="คำนวณ Total Income = hoursWorked * hourlyRate" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="420" width="240" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Output Results -->
+        <mxCell id="output" value="แสดงผล Employee ID และ Total Income" style="shape=parallelogram;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="520" width="280" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Stop -->
+        <mxCell id="stop" value="Stop" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="260" y="620" width="120" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Edges -->
+        <mxCell id="e1" edge="1" parent="1" source="start" target="input_id"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="input_id" target="input_hours"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="input_hours" target="input_rate"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="input_rate" target="calc_income"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="calc_income" target="output"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="output" target="stop"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

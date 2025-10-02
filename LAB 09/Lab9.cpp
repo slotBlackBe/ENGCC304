@@ -1,42 +1,43 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-bool isPrime(int n){
-    if (n <= 2) return false;
-    for (int i = 2; i * i <= n; i++) {
-        if (n % i == 0) return false;
+bool isPrime(int n){ // ตรวจสอบว่าตัวเลขเป็นจำนวนเฉพาะหรือไม่
+    if (n <= 2) return false; // ถ้า n < 2 จะไม่ถือว่าเป็นจำนวเฉพาะ
+    for (int i = 2; i * i <= n; i++) { // วนลูปจาก 2 ถึง √n 
+        if (n % i == 0) return false; // ถ้า n หาร i ลงตัวเเสดงว่าไม่ใช่จำนวนเฉพาะ
     }
-    return true;
+    return true; // ถ้าไม่เจอตัวหารเเสดงว่าเป็นจำนวนเฉพาะ
 }
 
 int main() {
     int N;
 
-    printf("Enter N :\n");
+    printf("Enter N :\n"); // รับค่าขนาดของอาเรย์จากผู้ใช้
     scanf("%d", &N);
+    int arr[N]; // ประกาศอาเรย์ขนาด N
 
-    int arr[N];
-
-    for (int i = 0; i < N; i++) {
-        printf("Enter value[%d] : \n", i);
-        scanf("%d", &arr[i]);
+    for (int i = 0; i < N; i++) { // รับค่าที่ละตำเเหน่งเก็บลงในอาเรย์
+        printf("Enter value[%d] : \n", i); // เเสดงตำเเหน่งที่จะกรอก
+        scanf("%d", &arr[i]); // อ่านค่ามาเก็บ
     }
 
-    printf("Index: ");
+    printf("Index: "); // เเสดงตำเเหน่งของเเต่ละ index
     for (int i = 0; i < N; i++) {
-        printf("%3d", i);
+        printf("%3d", i); // พิมพ์ index ให้เว้นช่องเท่ากับ
     }
-    printf("\n");
-
+    printf("\n"); // ขึ้นบรรทัดใหม่
+    // 
     printf("Array: ");
     for (int i = 0; i < N; i++) {
-        if (isPrime(arr[i])) {
-            printf("%3d", arr[i]);
+        if (isPrime(arr[i])) { // เรียกให้ฟังก์ชัน isPrime ตรวจสอบว่า arr[i] เป็นจำนวนเฉพาะหรือไม่
+            printf("%3d", arr[i]); // ถ้าใช่เเสดงตัวเลขจริง
         } else {
-            printf("%3c", '#');
+            printf("%3c", '#'); // ถ้าไม่ใช้เเสดงเป็นเครื่องหมาย #
         }
     }
-    printf("\n");
+    printf("\n"); // ขึ้นบรรทัดใหม่
 
     return 0; // จบโปรเเกรม
 }
+
+// ตัวเลขทที่เมื่อนำไปคูณกับตัวมันเองเเล้วได้เท่ากับ n

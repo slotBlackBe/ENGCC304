@@ -1,0 +1,76 @@
+<mxfile host="65bd71144e">
+    <diagram id="Flow1" name="Main">
+        <mxGraphModel dx="144324" dy="125426" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="21" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="2" target="3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="Start" style="ellipse" parent="1" vertex="1">
+                    <mxGeometry x="-8580" y="-8970" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="3" target="4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="ประกาศตัวแปร Name, Age" style="rectangle" parent="1" vertex="1">
+                    <mxGeometry x="-8600" y="-8890" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="4" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="แสดงผล: Enter your name:" style="parallelogram" parent="1" vertex="1">
+                    <mxGeometry x="-8610" y="-8810" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5" target="6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="รับค่า Name" style="parallelogram" parent="1" vertex="1">
+                    <mxGeometry x="-8590" y="-8730" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="6" target="7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="แสดงผล: Enter your age:" style="parallelogram" parent="1" vertex="1">
+                    <mxGeometry x="-8610" y="-8650" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="7" target="8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="รับค่า Age" style="parallelogram" parent="1" vertex="1">
+                    <mxGeometry x="-8590" y="-8570" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="8" target="9">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="แสดงผล: - - - - -" style="parallelogram" parent="1" vertex="1">
+                    <mxGeometry x="-8600" y="-8490" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9" target="10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="แสดงผล: Hello Name" style="parallelogram" parent="1" vertex="1">
+                    <mxGeometry x="-8610" y="-8410" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="10" target="11">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="แสดงผล: Age = ..." style="parallelogram" parent="1" vertex="1">
+                    <mxGeometry x="-8600" y="-8330" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Stop" style="ellipse" parent="1" vertex="1">
+                    <mxGeometry x="-8580" y="-8250" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" parent="1" source="2" target="3" edge="1"/>
+                <mxCell id="13" parent="1" source="3" target="4" edge="1"/>
+                <mxCell id="14" parent="1" source="4" target="5" edge="1"/>
+                <mxCell id="15" parent="1" source="5" target="6" edge="1"/>
+                <mxCell id="16" parent="1" source="6" target="7" edge="1"/>
+                <mxCell id="17" parent="1" source="7" target="8" edge="1"/>
+                <mxCell id="18" parent="1" source="8" target="9" edge="1"/>
+                <mxCell id="19" parent="1" source="9" target="10" edge="1"/>
+                <mxCell id="20" parent="1" source="10" target="11" edge="1"/>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-
 int main() {
     int score = 0;
     printf("Enter your score: ");
     scanf("%d", &score);
-    printf("Grade :");
-    if( score >= 90) {
+    printf("Grade : ");
+
+    if (score >= 80) {
         printf("A");
     } else if (score >= 75) {
         printf("B+");
@@ -16,12 +16,12 @@ int main() {
         printf("C+");
     } else if (score >= 60) {
         printf("C");
-    } else if (score >= 65) {
+    } else if (score >= 55) {
         printf("D+");
     } else if (score >= 50) {
-        printf("D");    
+        printf("D");
     } else {
         printf("F");
     }
-    return 0; 
+    return 0;
 }

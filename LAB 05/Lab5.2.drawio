@@ -1,0 +1,165 @@
+<mxfile host="65bd71144e">
+    <diagram name="Grade Program" id="grade-program">
+        <mxGraphModel dx="37850" dy="30863" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="start" value="Start" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-3930" y="-3070" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="inputScore" value="รับคะแนน (score)" style="parallelogram;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-3960" y="-2970" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow1" parent="1" source="start" target="inputScore" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="cond80" value="คะแนน ≥ 80 ?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-3960" y="-2890" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow2" parent="1" source="inputScore" target="cond80" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="outA" value="แสดงผล: A" style="parallelogram;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-3740" y="-2890" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow3" parent="1" source="cond80" target="outA" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="labelTrue80" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;" parent="flow3" vertex="1" connectable="0">
+                    <mxGeometry x="0.5" y="-0.8" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="cond75" value="คะแนน ≥ 75 ?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-3960" y="-2770" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow4" parent="1" source="cond80" target="cond75" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="labelFalse80" value="False" style="edgeLabel;html=1;align=center;verticalAlign=middle;" parent="flow4" vertex="1" connectable="0">
+                    <mxGeometry x="0.5" y="1.2" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="outBplus" value="แสดงผล: B+" style="parallelogram;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-3740" y="-2750" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow5" parent="1" source="cond75" target="outBplus" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="labelTrue75" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;" parent="flow5" vertex="1" connectable="0">
+                    <mxGeometry x="0.5" y="-0.8" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="cond70" value="คะแนน ≥ 70 ?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-3960" y="-2650" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow6" parent="1" source="cond75" target="cond70" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="labelFalse75" value="False" style="edgeLabel;html=1;align=center;verticalAlign=middle;" parent="flow6" vertex="1" connectable="0">
+                    <mxGeometry x="0.5" y="1.2" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="outB" value="แสดงผล: B" style="parallelogram;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-3740" y="-2630" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow7" parent="1" source="cond70" target="outB" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="labelTrue70" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;" parent="flow7" vertex="1" connectable="0">
+                    <mxGeometry x="0.5" y="-0.8" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="cond65" value="คะแนน ≥ 65 ?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-3960" y="-2530" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow8" parent="1" source="cond70" target="cond65" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="labelFalse70" value="False" style="edgeLabel;html=1;align=center;verticalAlign=middle;" parent="flow8" vertex="1" connectable="0">
+                    <mxGeometry x="0.5" y="1.2" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="outCplus" value="แสดงผล: C+" style="parallelogram;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-3740" y="-2510" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow9" parent="1" source="cond65" target="outCplus" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="labelTrue65" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;" parent="flow9" vertex="1" connectable="0">
+                    <mxGeometry x="0.5" y="-0.8" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="cond60" value="คะแนน ≥ 60 ?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-3960" y="-2410" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow10" parent="1" source="cond65" target="cond60" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="labelFalse65" value="False" style="edgeLabel;html=1;align=center;verticalAlign=middle;" parent="flow10" vertex="1" connectable="0">
+                    <mxGeometry x="0.5" y="1.2" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="outC" value="แสดงผล: C" style="parallelogram;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-3740" y="-2390" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow11" parent="1" source="cond60" target="outC" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="labelTrue60" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;" parent="flow11" vertex="1" connectable="0">
+                    <mxGeometry x="0.5" y="-0.8" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="cond55" value="คะแนน ≥ 55 ?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-3960" y="-2270" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow12" parent="1" source="cond60" target="cond55" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="labelFalse60" value="False" style="edgeLabel;html=1;align=center;verticalAlign=middle;" parent="flow12" vertex="1" connectable="0">
+                    <mxGeometry x="0.5" y="1.2" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="outDplus" value="แสดงผล: D+" style="parallelogram;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-3740" y="-2250" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow13" parent="1" source="cond55" target="outDplus" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="labelTrue55" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;" parent="flow13" vertex="1" connectable="0">
+                    <mxGeometry x="0.5" y="-0.8" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="cond50" value="คะแนน ≥ 50 ?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-3960" y="-2150" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow14" parent="1" source="cond55" target="cond50" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="labelFalse55" value="False" style="edgeLabel;html=1;align=center;verticalAlign=middle;" parent="flow14" vertex="1" connectable="0">
+                    <mxGeometry x="0.5" y="1.2" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="outD" value="แสดงผล: D" style="parallelogram;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-3740" y="-2130" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow15" parent="1" source="cond50" target="outD" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="labelTrue50" value="True" style="edgeLabel;html=1;align=center;verticalAlign=middle;" parent="flow15" vertex="1" connectable="0">
+                    <mxGeometry x="0.5" y="-0.8" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="outF" target="stop">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="outF" value="แสดงผล: F" style="parallelogram;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-3960" y="-2010" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow16" parent="1" source="cond50" target="outF" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="labelFalse50" value="False" style="edgeLabel;html=1;align=center;verticalAlign=middle;" parent="flow16" vertex="1" connectable="0">
+                    <mxGeometry x="0.5" y="1.2" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="stop" value="Stop" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="-3930" y="-1890" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow17a" parent="1" source="outA" target="stop" edge="1"/>
+                <mxCell id="flow17b" parent="1" source="outBplus" target="stop" edge="1"/>
+                <mxCell id="flow17c" parent="1" source="outB" target="stop" edge="1"/>
+                <mxCell id="flow17d" parent="1" source="outCplus" target="stop" edge="1"/>
+                <mxCell id="flow17e" parent="1" source="outC" target="stop" edge="1"/>
+                <mxCell id="flow17f" parent="1" source="outDplus" target="stop" edge="1"/>
+                <mxCell id="flow17g" parent="1" source="outD" target="stop" edge="1"/>
+                <mxCell id="flow17h" parent="1" source="outF" target="stop" edge="1"/>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

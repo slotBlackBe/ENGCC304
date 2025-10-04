@@ -1,0 +1,167 @@
+<mxfile host="65bd71144e">
+    <diagram id="IQaCD0qhXF1Ay1_ZfzKg" name="Page-1">
+        <mxGraphModel dx="381" dy="192" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="start" value="Start" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="40" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="input_position" value="กรุณาเลือกตำแหน่งงาน (1=Junior, 2=Mid-Level, 3=Senior)" style="parallelogram;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="120" width="200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="input_years" value="กรุณากรอกจำนวนปีที่ทำงาน" style="parallelogram;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="200" width="200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="input_projects" value="กรุณากรอกจำนวนโปรเจคที่สำเร็จในปีนี้" style="parallelogram;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="280" width="200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="cond_position" value="ตำแหน่งงานถูกต้อง?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="360" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="set_baseSalary" value="กำหนดเงินเดือนพื้นฐานตามตำแหน่ง" style="rectangle;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="460" width="200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="cond_years1" value="years &lt; 1?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="540" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="cond_years2" value="years &lt;= 3?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="620" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="cond_years3" value="years &lt;= 5?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="700" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="set_bonus0" value="โบนัส = 0" style="rectangle;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="540" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="set_bonus10" value="โบนัส = baseSalary * 0.10" style="rectangle;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="620" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="set_bonus15" value="โบนัส = baseSalary * 0.15" style="rectangle;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="700" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="set_bonus20" value="โบนัส = baseSalary * 0.20" style="rectangle;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="780" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="cond_projects" value="projects &gt; 5?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="860" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="set_extraBonus" value="โบนัสพิเศษ = baseSalary * 0.05" style="rectangle;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="860" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="set_netSalary" value="เงินเดือนสุทธิ = baseSalary + โบนัส + โบนัสพิเศษ" style="rectangle;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="960" width="220" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="output_result" value="แสดงผล: เงินเดือนพื้นฐาน, โบนัส, โบนัสพิเศษ, เงินเดือนสุทธิ" style="parallelogram;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="1060" width="220" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="stop" value="Stop" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="1160" width="100" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="invalid_position" value="แสดงข้อความ: ตำแหน่งงานไม่ถูกต้อง" style="rectangle;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="380" width="200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_start_input" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="start" target="input_position" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_input_position_years" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="input_position" target="input_years" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_input_years_projects" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="input_years" target="input_projects" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_input_projects_condPosition" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="input_projects" target="cond_position" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_condPosition_true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="cond_position" target="set_baseSalary" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_condPosition_false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="cond_position" target="invalid_position" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_invalid_stop" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="invalid_position" target="stop" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="700" y="350"/>
+                            <mxPoint x="100" y="350"/>
+                            <mxPoint x="100" y="1185"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="edge_setBase_condYears1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="set_baseSalary" target="cond_years1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_condYears1_true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="cond_years1" target="set_bonus0" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="700" y="560"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="edge_condYears1_false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="cond_years1" target="cond_years2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_condYears2_true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="cond_years2" target="set_bonus10" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_condYears2_false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="cond_years2" target="cond_years3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_condYears3_true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="cond_years3" target="set_bonus15" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_condYears3_false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="cond_years3" target="set_bonus20" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_bonus0_condProjects" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="set_bonus0" target="cond_projects" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="660" y="620"/>
+                            <mxPoint x="340" y="620"/>
+                            <mxPoint x="340" y="900"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="edge_bonus10_condProjects" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="set_bonus10" target="cond_projects" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="680" y="700"/>
+                            <mxPoint x="300" y="700"/>
+                            <mxPoint x="300" y="900"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="edge_bonus15_condProjects" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="set_bonus15" target="cond_projects" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="680" y="780"/>
+                            <mxPoint x="430" y="780"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="edge_bonus20_condProjects" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="set_bonus20" target="cond_projects" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_condProjects_true" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="cond_projects" target="set_extraBonus" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_condProjects_false" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="cond_projects" target="set_netSalary" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_extraBonus_netSalary" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="set_extraBonus" target="set_netSalary" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="530" y="885"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="edge_netSalary_output" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="set_netSalary" target="output_result" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge_output_stop" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="output_result" target="stop" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

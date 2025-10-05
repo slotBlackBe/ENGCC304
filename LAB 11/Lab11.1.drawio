@@ -1,0 +1,143 @@
+<mxfile host="65bd71144e">
+    <diagram id="isArmstrongFlow" name="Flowchart - Armstrong Number">
+        <mxGraphModel dx="84171" dy="35323" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="main_start" value="Start" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="510" y="20" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="main_init" value="กำหนดตัวแปร num" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="130" width="220" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="main_input" value="แสดงข้อความ &quot;Enter Number:&quot; และรับค่า num" style="shape=parallelogram;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="250" width="300" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="main_call" value="เรียกใช้ฟังก์ชัน isArmstrong(num)" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9673a6;fillColor=#e1d5e7;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="350" width="280" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="main_cond" value="ผลลัพธ์ของ isArmstrong(num) == 1 ?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="460" y="450" width="260" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="main_pass" value="แสดงผล &quot;Pass.&quot;" style="shape=parallelogram;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="610" width="200" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="main_notpass" value="แสดงผล &quot;Not Pass.&quot;" style="shape=parallelogram;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="720" y="610" width="200" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="main_stop" value="Stop" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="505" y="740" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow1" parent="1" source="main_start" target="main_init" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow2" parent="1" source="main_init" target="main_input" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow3" parent="1" source="main_input" target="main_call" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow4" parent="1" source="main_call" target="main_cond" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow5T" value="True" parent="1" source="main_cond" target="main_pass" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="300" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow5F" value="False" parent="1" source="main_cond" target="main_notpass" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="900" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow6a" parent="1" source="main_pass" target="main_stop" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow6b" parent="1" source="main_notpass" target="main_stop" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" style="edgeStyle=none;html=1;" edge="1" parent="1" source="func_start" target="func_init">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="func_start" value="Start (isArmstrong)" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="1320" y="40" width="200" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="func_init" target="func_loop1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="func_init" value="กำหนด original=num, sum=0, digits=0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="1260" y="150" width="320" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" style="edgeStyle=none;html=1;" edge="1" parent="1" source="func_loop1" target="func_count">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="func_loop1" value="temp &gt; 0 ?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="1320" y="240" width="200" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="func_count" target="func_reset">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="func_count" value="digits++, temp /= 10" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="1550" y="260" width="220" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="func_reset" target="func_loop2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="func_reset" value="temp = num" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="1320" y="400" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" style="edgeStyle=none;html=1;" edge="1" parent="1" source="func_loop2" target="func_sum">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="func_loop2" value="temp &gt; 0 ?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="1320" y="480" width="200" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="func_sum" target="func_cond">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="func_sum" value="digit = temp % 10; sum += pow(digit, digits); temp /= 10" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="1560" y="500" width="280" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" style="edgeStyle=none;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="func_cond" target="func_true">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" style="edgeStyle=none;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="func_cond" target="func_false">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="func_cond" value="sum == original ?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="1320" y="640" width="200" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="func_true">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1420" y="890" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="func_true" value="Return 1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="1100" y="780" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="func_false" target="func_stop">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="func_false" value="Return 0" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="1530" y="780" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="func_stop" value="Stop (isArmstrong)" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="1320" y="890" width="200" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" parent="1" source="func_start" target="func_init" edge="1"/>
+                <mxCell id="3" parent="1" source="func_init" target="func_loop1" edge="1"/>
+                <mxCell id="4" value="True" parent="1" source="func_loop1" target="func_count" edge="1"/>
+                <mxCell id="5" parent="1" source="func_count" target="func_loop1" edge="1"/>
+                <mxCell id="6" value="False" parent="1" source="func_loop1" target="func_reset" edge="1"/>
+                <mxCell id="7" parent="1" source="func_reset" target="func_loop2" edge="1"/>
+                <mxCell id="8" value="True" parent="1" source="func_loop2" target="func_sum" edge="1"/>
+                <mxCell id="9" parent="1" source="func_sum" target="func_loop2" edge="1"/>
+                <mxCell id="10" value="False" parent="1" source="func_loop2" target="func_cond" edge="1"/>
+                <mxCell id="11" value="True" parent="1" source="func_cond" target="func_true" edge="1"/>
+                <mxCell id="12" value="False" parent="1" source="func_cond" target="func_false" edge="1"/>
+                <mxCell id="13" parent="1" source="func_true" target="func_stop" edge="1"/>
+                <mxCell id="14" parent="1" source="func_false" target="func_stop" edge="1"/>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

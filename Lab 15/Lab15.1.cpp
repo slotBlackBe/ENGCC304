@@ -1,41 +1,47 @@
 #include <stdio.h>
-#include <ctype.h> // เอามาตรวจสอบตัวอักษร
+#include <ctype.h>  // ใช้สำหรับ isspace()
 
-void countWordsInFile(char filename[], int *wordCount) {
-    FILE *fp;
-    char ch;
-    int inWord = 0;
-
-    *wordCount = 0;
-
-    fp = fopen(filename, "r");
+// ฟังก์ชันนับจำนวนคำในไฟล์
+int countWordsInFile(char filename[]) {
+    FILE *fp = fopen(filename, "r");
     if (fp == NULL) {
         printf("Cannot open file '%s'\n", filename);
-        return;
+        return -1; // คืนค่า -1 กรณีเปิดไฟล์ไม่สำเร็จ
     }
+
+    int inWord = 0;  // ตัวแปรบอกว่าอยู่ในคำหรือไม่
+    int wordCount = 0;
+    char ch;
 
     while ((ch = fgetc(fp)) != EOF) {
         if (isspace(ch)) {
-            inWord = 0;
-        } else if (inWord == 0) {
-            inWord = 1;
-            (*wordCount)++;
+            if (inWord) {
+                wordCount++;  // เจอจุดจบคำ
+                inWord = 0;
+            }
+        } else {
+            inWord = 1;  // อยู่ในคำ
         }
     }
 
+    // หากไฟล์ไม่จบด้วย space ให้บวกคำสุดท้าย
+    if (inWord) {
+        wordCount++;
+    }
+
     fclose(fp);
+    return wordCount;
 }
 
 int main() {
     char filename[100];
-    int totalWords;
-
-    printf("Enter file name:\n");
+    printf("Enter file name: ");
     scanf("%s", filename);
 
-    countWordsInFile(filename, &totalWords);
+    int count = countWordsInFile(filename);
+    if (count != -1) {
+        printf("Total number of words in '%s' : %d words\n", filename, count);
+    }
 
-    printf("Total number of words in '%s' : %d words\n", filename, totalWords);
-
-    return 0; // จบโปรเเกรม
+    return 0;
 }

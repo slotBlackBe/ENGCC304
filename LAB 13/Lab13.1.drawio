@@ -1,0 +1,96 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="28.2.5" pages="2">
+  <diagram name="Page-1" id="Qnb-MdqNoxR_H-0la0g4">
+    <mxGraphModel dx="1281" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="startMain" value="Start" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" parent="1" vertex="1">
+          <mxGeometry x="175" y="40" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="declareMain" value="ประกาศตัวแปร num1, num2, ptr1, ptr2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;" parent="1" vertex="1">
+          <mxGeometry x="110" y="120" width="250" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="input1" value="รับค่าจากผู้ใช้ (num1)" style="parallelogram;whiteSpace=wrap;html=1;fillColor=#dae8fc;" parent="1" vertex="1">
+          <mxGeometry x="110" y="200" width="250" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="input2" value="รับค่าจากผู้ใช้ (num2)" style="parallelogram;whiteSpace=wrap;html=1;fillColor=#dae8fc;" parent="1" vertex="1">
+          <mxGeometry x="110" y="270" width="250" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="assignPtr" value="ptr1 = &amp;num1&#xa;ptr2 = &amp;num2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;" parent="1" vertex="1">
+          <mxGeometry x="110" y="360" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="printBefore" value="แสดงผลค่า Before Swap" style="parallelogram;whiteSpace=wrap;html=1;fillColor=#dae8fc;" parent="1" vertex="1">
+          <mxGeometry x="110" y="440" width="250" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="callFunc" value="เรียกใช้ฟังก์ชัน swapNumber(ptr1, ptr2)" style="shape=process;rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" parent="1" vertex="1">
+          <mxGeometry x="85" y="520" width="300" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="printAfter" value="แสดงผลค่า After Swap" style="parallelogram;whiteSpace=wrap;html=1;fillColor=#dae8fc;" parent="1" vertex="1">
+          <mxGeometry x="110" y="600" width="250" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="stopMain" value="Stop" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" parent="1" vertex="1">
+          <mxGeometry x="175" y="680" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-1" parent="1" source="startMain" target="declareMain" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-2" parent="1" source="declareMain" target="input1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-3" parent="1" source="input1" target="input2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-4" parent="1" source="input2" target="assignPtr" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-5" parent="1" source="assignPtr" target="printBefore" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-6" parent="1" source="printBefore" target="callFunc" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-7" parent="1" source="callFunc" target="printAfter" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-8" parent="1" source="printAfter" target="stopMain" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="startFunc" value="Start (swapNumber)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" parent="1" vertex="1">
+          <mxGeometry x="520" y="90" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="p1" value="*a = *a + *b" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;" parent="1" vertex="1">
+          <mxGeometry x="500" y="180" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="p2" value="*b = *a - *b" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;" parent="1" vertex="1">
+          <mxGeometry x="500" y="260" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="p3" value="*a = *a - *b" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;" parent="1" vertex="1">
+          <mxGeometry x="500" y="340" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="stopFunc" value="Stop (swapNumber)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" parent="1" vertex="1">
+          <mxGeometry x="520" y="420" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-9" parent="1" source="startFunc" target="p1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-10" parent="1" source="p1" target="p2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-11" parent="1" source="p2" target="p3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-12" parent="1" source="p3" target="stopFunc" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="q-CIciFuJYpiS8QPMkeO" name="Page-2">
+    <mxGraphModel dx="1042" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

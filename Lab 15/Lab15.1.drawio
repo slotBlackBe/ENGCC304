@@ -1,0 +1,169 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="28.2.5" pages="2">
+  <diagram name="Page-1" id="Qnb-MdqNoxR_H-0la0g4">
+    <mxGraphModel dx="732" dy="301" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" value="Start" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="20" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="p1" value="ประกาศตัวแปร filename[100], totalWords" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="80" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="io1" value="แสดงข้อความ &#39;Enter file name:&#39;" style="shape=parallelogram;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="150" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="io2" value="รับค่าชื่อไฟล์จากผู้ใช้ (filename)" style="shape=parallelogram;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="220" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="f1" value="เรียกใช้ฟังก์ชัน countWordsInFile(filename, &amp;totalWords)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="290" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="io3" value="แสดงจำนวนคำทั้งหมดในไฟล์" style="shape=parallelogram;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="360" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="stop" value="Stop" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="430" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="start" target="p1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="p1" target="io1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="io1" target="io2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="io2" target="f1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="f1" target="io3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="io3" target="stop" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fstart" value="Start (countWordsInFile)" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="40" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fp1" value="รับค่า filename[], *wordCount" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="100" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fp2" value="ประกาศ FILE *fp, char ch, int inWord = 0" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="160" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fp3" value="*wordCount = 0" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="220" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fp4" value="เปิดไฟล์ fp = fopen(filename, &#39;r&#39;)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="280" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fc1" value="fp == NULL ?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="340" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="io4" value="แสดงข้อความ &#39;Cannot open file&#39;" style="shape=parallelogram;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="740" y="345" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fp5" value="วนลูปอ่านไฟล์ (ch = fgetc(fp)) != EOF" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="420" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fc2" value="isspace(ch) ?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="480" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fp6" value="inWord = 0" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="790" y="485" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fc3" value="inWord == 0 ?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="560" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fp7" value="inWord = 1 และ (*wordCount)++" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="750" y="565" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fp8" value="fclose(fp)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="640" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fstop" value="Stop (countWordsInFile)" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="700" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fe1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="fstart" target="fp1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fe2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="fp1" target="fp2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fe3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="fp2" target="fp3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fe4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="fp3" target="fp4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fe5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="fp4" target="fc1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fe6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="fc1" target="io4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fe7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="fc1" target="fp5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fe8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="fp5" target="fc2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fe9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="fc2" target="fp6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fe10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="fc2" target="fc3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fe11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="fc3" target="fp7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fe12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="fc3" target="fp5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="590" />
+              <mxPoint x="360" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fe13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="fp6" target="fp5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="810" y="540" />
+              <mxPoint x="750" y="540" />
+              <mxPoint x="750" y="445" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fe14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="fp7" target="fp5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="830" y="550" />
+              <mxPoint x="380" y="550" />
+              <mxPoint x="380" y="445" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fe15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="fp5" target="fp8" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="445" />
+              <mxPoint x="460" y="665" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fe16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;" parent="1" source="fp8" target="fstop" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="q-CIciFuJYpiS8QPMkeO" name="Page-2">
+    <mxGraphModel dx="1042" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

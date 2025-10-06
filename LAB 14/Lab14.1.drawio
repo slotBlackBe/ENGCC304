@@ -1,0 +1,144 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="28.2.5" pages="2">
+  <diagram name="Page-1" id="Qnb-MdqNoxR_H-0la0g4">
+    <mxGraphModel dx="883" dy="363" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="start" target="p1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="start" value="Start" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="20" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="p1" target="io1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p1" value="ประกาศตัวแปร arr[100], count=0, min, max" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="170" y="80" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="io1" value="แสดงข้อความ &#39;Enter value:&#39;" style="shape=parallelogram;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="170" y="150" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="c1" target="p2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" value="อ่านค่าตัวเลขสำเร็จหรือไม่?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="220" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="p2" target="p3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2" value="เก็บค่าลง arr[count]" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="170" y="320" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="p3" target="c2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3" value="count = count + 1" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="170" y="380" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="c2" target="p4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" value="getchar() == &#39;\n&#39; ?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="450" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="p4" target="p5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p4" value="แสดง &#39;Index:&#39; และค่าดัชนีทั้งหมด" style="shape=parallelogram;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="170" y="560" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="p5" target="f1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5" value="แสดง &#39;Array:&#39; และค่าทั้งหมด" style="shape=parallelogram;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="170" y="620" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="f1" target="io2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f1" value="เรียกใช้ฟังก์ชัน findMinMax(arr, count, &amp;min, &amp;max)" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=#000000;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="170" y="690" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="io2" target="stop">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="io2" value="แสดงผล Min และ Max" style="shape=parallelogram;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="170" y="760" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="stop" value="Stop" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="200" y="830" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fstart" target="fp1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fstart" value="Start (findMinMax)" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="80" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="fp1" target="fp2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fp1" value="รับค่า arr[], size, *min, *max" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="510" y="140" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fp2" target="fc1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fp2" value="กำหนด *min = arr[0], *max = arr[0]" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="510" y="210" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fc1" target="fc2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fc1" value="i &lt; size ?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="510" y="280" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fc2" target="fp3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fc2" value="arr[i] &lt; *min ?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="510" y="360" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fp3" target="fc3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fp3" value="*min = arr[i]" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="510" y="440" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fc3" target="fp4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fc3" value="arr[i] &gt; *max ?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="510" y="510" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fp4" target="fp5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fp4" value="*max = arr[i]" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="510" y="590" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fp5" target="fstop">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fp5" value="i = i + 1" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="510" y="660" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fstop" value="Stop (findMinMax)" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="740" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="OzAL1LMiP54-Y9ODrJGt-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.498;entryY=0.067;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="io1" target="c1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="q-CIciFuJYpiS8QPMkeO" name="Page-2">
+    <mxGraphModel dx="1042" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

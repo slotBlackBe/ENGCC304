@@ -61,6 +61,10 @@ void addBook(Book books[], int *count) {
     fgets(books[*count].title, sizeof(books[*count].title), stdin);
     books[*count].title[strcspn(books[*count].title, "\n")] = '\0';
 
+    printf("Enter Author: ");
+    fgets(books[*count].title, sizeof(books[*count].title), stdin);
+    books[*count].author[strcspn(books[*count].author, "\n")] = '\0';
+
     printf("Enter Year: ");
     scanf("%d", &books[*count].year);
 
